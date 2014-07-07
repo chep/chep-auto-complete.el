@@ -40,6 +40,8 @@
 ;; Copyright Cédric Chépied 2013
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'semantic/analyze/complete)
+
 (defun chep-auto-function()
   (interactive)
   (let ((tag (semantic-analyze-possible-completions-default (semantic-analyze-current-context))))
